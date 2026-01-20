@@ -63,16 +63,23 @@ nav {
 }
 
 .btn:hover {
-    background: #00FF88;
+    background: rgb(1, 214, 115);
     transition: 0.8s;
     color: black;
 }
 #subscribe-button:hover {
-    background: #00FF88;
+    background: rgb(1, 214, 115);
     transition: 0.5s;
     color: black;
 }
+#badge:hover {
+    background: rgb(3, 145, 109);
+    color: rgb(7, 238, 103);
+    transition: 0.3s;
+    cursor: pointer;
 
+
+}
 
 .grid-card {
     border: none;
@@ -155,7 +162,7 @@ nav {
     min-width: 75px;
     border: none;
     border-radius: 1000px;
-    background: rgba(0, 255, 136, 1);
+    background: rgb(1, 214, 115);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -500,7 +507,7 @@ footer h2 {
 @media screen and (max-width: 576px) {
 
     body {
-        margin: 0 auto;
+        margin: 0;
         padding: 0;
     }
 
@@ -624,7 +631,59 @@ footer h2 {
         max-width: 420px;
     }
 
+    .meet-host {
+        font-size: 32px;
+        font-weight: 700px;
+        line-height: 40px;
+    }
     
+    .host-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
     
+    .host-details h3 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+    }
+
+    .host-icons {
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Footer Section  */
+
+    footer {
+        width: 100%;
+        max-width: 576px;
+        background-image: url(./assets/footer-bg.png);
+        width: 100%;
+        max-width: 576px;
+        min-height: 250px;
+        
+    }
+
+    footer h2 {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 50px;
+
+    }
+     .footer-icons-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 100px;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        margin-bottom: 15px;
+    }
 
 } 
