@@ -395,6 +395,9 @@ nav {
     align-items: center;
     gap: 24px;
     margin-top: 40px;
+    background: rgba(37, 13, 68, 1);
+    border: none;
+    border-radius: 40px;
 }
 .host-details h3 {
     font-size: 32px;
@@ -410,10 +413,6 @@ nav {
     color: rgba(255, 255, 255, 0.61);
     margin-bottom: 10px;
 }
-/* .host-icons img {
-    width: 20px;
-    height: 20px;
-} */
 .host-icons {
     width: auto;
     height: 40px;
@@ -423,4 +422,59 @@ nav {
     text-align: center;
     gap: 28px;
 
+}
+
+ /* Footer Section  */
+
+ footer {
+    width: 100%;
+    max-width: 1600px;
+    background-image: url(./assets/footer-bg.png);
+    width: 100%;
+    min-height: 420px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer h2 {
+    color: #FFFFFF;
+    font-size: 58px;
+    line-height: 100%;
+}
+
+.footer-icons-container {
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.603);
+    gap: 40px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+
+}
+.footer-icons {
+    display: flex;
+    gap: 5px;
+
+}
+.footer-icons p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.603);
+}
+
+.copyright * {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.603);
 }
