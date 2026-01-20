@@ -5,11 +5,13 @@
     padding: 0;
 }
 body {
+    width: 100%;
     max-width: 1600px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 nav {
-    padding: 10px 200px;
+    padding: 10px 16%;
 }
 #nev-bar {
     background-color: rgba(26, 11, 46, 1);
@@ -165,18 +167,18 @@ nav {
     top: 12px
 
 }
+.teachwave {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #banner-section h1 {
     font-size: 73px;
     font-weight: 800px;
     color:rgba(255, 255, 255, 1);
     margin-top: 40px;
 
-}
-.teachwave {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 #banner-section p {
     font-size: 16px;
@@ -231,8 +233,9 @@ nav {
 .card-container {
     width: 75%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 120px auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -258,6 +261,7 @@ nav {
   /* Choose Section  */
 
 .choose-section {
+    margin-top: -120px;
     background: rgba(35, 14, 61, 1);
     width: 100%;
     max-width: 1600px;
@@ -387,6 +391,11 @@ nav {
 /* Host Div  */
 .meet-host {
     margin-top: 120px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: center;
+
 }
 
 .host-container {
@@ -478,3 +487,144 @@ footer h2 {
     line-height: 24px;
     color: rgba(255, 255, 255, 0.603);
 }
+
+.mobile-icon {
+    display: none;
+}
+
+
+ /* Risponsive Styles  */
+
+    /* Moblie  */
+
+@media screen and (max-width: 576px) {
+
+    body {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    /* Nav Bar  */
+
+    .menu *{
+        display: none;
+    }
+
+    .sb-top-button {
+        display: none;
+    }
+    
+    .mobile-icon {
+        display: block;
+        background: cover;
+        width: 40px;
+        cursor: pointer;
+    }
+    .mobile-icon img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Bannar Section  */
+    #banner-section {
+        width: 100%;
+        max-width: 576px;
+        height: auto;
+        background-image: url(./assets/hero-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+    .hero-images {
+        width: 300px;
+    }
+    #badge {
+        left: 240px;
+        top: 50px;
+    }
+    #banner-section h1 {
+        font-size: 40px;
+        font-weight: 800px;
+        line-height: 48px;
+    }
+
+    .teachwave {
+        width: 400px;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* About Section  */
+
+    #about-section {
+        width: 100%;
+    }
+    .about-heading h1 {
+        font-size: 32px;
+        font-weight: 700px;
+        line-height: 39px;
+
+    }
+    .about-heading p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+     
+    /* Choose Section  */
+
+    .card-container {
+        border-top: 1px solid rgba(255, 255, 255, 0.178);
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding-top: 40px;
+
+    }
+    .choose-heading h1 {
+        width: 100%;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+
+    }
+    .grid-container {
+        max-width: 400px;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,400px);
+        align-items: center;
+        justify-content: center;
+    }
+    .grid-card {
+        padding: 10px;
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        padding-top: 20px;
+    }
+
+    /* Feature Section  */
+
+    #feature-section {
+        max-width: 576px;
+    }
+    .featured-episodes {
+        width: 400px;
+        font-size: 32px;
+        font-weight: 700px;
+        line-height: 40px;
+    }
+    .frame-div {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .iframe {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    
+    
+
+} 
